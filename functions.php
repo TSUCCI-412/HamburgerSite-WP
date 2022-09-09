@@ -18,9 +18,11 @@ add_filter( 'pre_get_document_title', 'HamburgerSite_title' ); //フィルター
 
     //テーマサポート
     add_theme_support( 'title-tag' );
-    add_theme_support( 'menus' );
+    //add_theme_support( 'menus' );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5', array( 'search-form' ) );
+    add_theme_support( 'automatic-feed-links' );
+    
     //メニューの登録
     /*register_sidebar(
         array(
