@@ -1,0 +1,121 @@
+.p-branchmenu {
+        @include mq(tb) {
+            display: grid;
+            gap: 40px;    //2つの写真の隙間
+            grid-template-columns: 1fr 1fr;
+        }
+        @include mq(pc) {
+            display: grid;
+            gap: 80px;    //2つの写真の隙間
+            margin: 120px 110px 130px;
+
+        }
+    &__head {
+        white-space: nowrap;
+        font-size:  rem(41);
+        color: var(--secondry-fontcolor);
+        font-family: "Roboto";
+        @include mq(tb) {
+            font-size: rem(44);
+            
+        }
+        @include mq(pc) {
+            font-size: rem(60);
+            
+        }
+        & > a {
+            display: block;
+            padding: 20px;
+            position: absolute; //リンクを全体に
+            height: 100%;
+            width: 100%;
+        }
+        & > a::after {
+            display: block;
+            content: "";
+            border: solid 2px;
+            width: 33px;
+            background: var(--secondry-fontcolor);
+            margin-top: 20px;
+            
+            @include mq(tb) {
+                width: 36px;
+            }
+            @include mq(pc) {
+                width: 63px;
+                margin-top: 34px;
+            }
+        }
+    } 
+    &__list {
+        padding: 290px 10px 10px;  //300-10
+         
+       @include mq(tb) {
+           padding: 305px 10px 10px;  //315-10
+       }
+       @include mq(pc) {
+           padding: 785px 20px 20px;  //805-20
+         
+    }
+
+    }     
+    &__item {
+    background-color: #fff;
+    opacity: .8;
+    margin-top: 10px;
+    @include mq(pc) {
+        margin-top: 20px;
+    }
+    & > dl {
+        color: var(--primary-fontcolor);
+        padding: 20px 10px;
+        @include mq(pc) {
+            padding: 20px;
+        }
+    }
+    & > dl > dt {
+        font-size: 22px;
+        @include mq(tb) {
+            font-size: 24px;
+        }
+        
+    
+    }
+    & > dl > dd {
+        font-size: 16px;
+        font-weight: normal;
+        padding-top: 20px;
+        @include mq(pc) {
+            padding-top: 25px;
+        }
+    }
+
+ }
+} 
+
+.p-branchmenu--takeout {
+    width: 100%;
+    background-image: url(../img/takeout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    position: relative;
+    @include mq(tb) {
+        margin-bottom: 0;
+    }
+    @include mq(pc) {
+        min-width: 350px;
+    }
+
+}
+.p-branchmenu--eatin {
+    width: 100%;
+    background-image: url(../img/eatin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include mq(pc) {
+        min-width: 350px;
+    }
+    
+} 

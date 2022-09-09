@@ -1,0 +1,30 @@
+// 変数の定義
+// min-width　～以上　「モバイルファースト」
+
+$breakpoints: (
+  'tb': 'screen and (min-width: 600px)',
+  'pc': 'screen and (min-width: 1025px)',
+  'lg': 'screen and (min-width: 1501px)',
+ 
+ 
+ 
+) !default;
+
+
+$breakpoint-range: (
+'md': 'screen and (min-width: 1026px) and (max-width: 1500px)',
+
+) !default;
+
+
+
+:root {
+  --primary-fontcolor: #3C2A10;
+  --secondry-fontcolor: #fff;
+  --third-fontcolor: #707070;
+  --sub-fontcolor: red;
+  --card-bg: #3C2B1C;
+  --sidebar-bg: #F2EDE9;
+  --header-bg: #FFF7EF;
+  --footer-bg: #9D8670;
+}

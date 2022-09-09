@@ -1,0 +1,51 @@
+.p-header {
+    position: relative;
+    background-color: var(--header-bg);
+    &__btn {
+        color: var(--third-fontcolor);
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        @include mq(tb) {
+            top: 18px;
+            right: 26px;
+        }
+        @include mq(pc) {
+            visibility: hidden;  //display:noneどっち？？
+        }
+       
+    }
+    &__wrap {
+        height: 100%;   //親要素と高さを揃える
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+        @include mq(pc){
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            padding-left: 60px;
+            margin-right: 10px;
+          
+        }
+    }
+    &__title {
+        color: var(--third-fontcolor);
+        font-family: "Roboto";
+        font-size: rem(40);    
+        text-align: center;
+        @include mq(pc){
+            font-size: rem(64);
+        }
+        & > a {
+            font-size:  rem(40);
+            display: block;
+            @include mq(pc) {
+                font-size: rem(64);
+            }
+    
+        }
+    }
+}

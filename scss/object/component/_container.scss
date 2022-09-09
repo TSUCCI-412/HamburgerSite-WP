@@ -1,0 +1,13 @@
+.c-container {
+	width: 100%;
+		@include mq(pc) {
+    	display: grid;
+		grid-template-columns: 4fr 1fr;
+		grid-template-rows: auto 150px;
+		&__main {
+			grid-row: 1/2;
+			grid-column: 1/2;
+			
+		}
+	}
+	}

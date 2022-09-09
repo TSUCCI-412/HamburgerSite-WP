@@ -1,0 +1,61 @@
+.c-toggle {
+   position: relative; 
+   color: var(--third-fontcolor);
+    
+   &--btn {
+      position: absolute;
+      top: 82px;
+      left: 46px;
+      font-size: rem(34);
+      z-index: 1000;
+      visibility: hidden;
+      @include mq(pc) {
+         visibility: visible;
+      }
+   }
+   &--line {
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 240px;
+      width: 40px;
+      height: 40px;
+      visibility: hidden;
+      transition-duration: .3s;
+      @include mq(pc) {
+         display: none;
+      }
+   
+      &::after,&::before {
+         position: absolute;
+         content: "";
+         display: block;
+         width: 40px;
+         height: 4px;
+         background-color: var(--third-fontcolor);
+         }
+         &::before {
+            top: 10px;
+            transform: translateY(10px) rotate(45deg);
+         
+         }
+         &::after {
+            top: 25px;
+            transform: translateY(-5px) rotate(-45deg);
+         }
+   }   
+}
+
+.c-toggle--line.active {
+   visibility: visible;
+}
+.c-toggle--line.active.c-toggle--line::before {
+   visibility: visible;
+   //transform: translateY(10px) rotate(45deg);
+}
+.c-toggle--line.active.c-toggle--line::after {
+   visibility: visible;
+   //transform: translateY(-5px) rotate(-45deg);
+}
+
+

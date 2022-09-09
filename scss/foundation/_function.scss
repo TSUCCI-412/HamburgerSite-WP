@@ -1,0 +1,7 @@
+$baseFontSize: 16;
+  @function rem($pixels) {
+    @return $pixels / $baseFontSize * 1rem;
+  }
+
+
+//  font-size: rem(16);    CSSファイルでは1remと出力され、ブラウザでは16px

@@ -1,0 +1,23 @@
+.c-table {
+    margin-top: 30px;
+    margin-bottom:30px;
+    
+    & > table {
+        width: 100%;
+        height: 305px;
+        border-collapse: collapse;  /* tr、tdなどの隣接するセルの隙間をなくす */
+        }
+        & > tr, td {
+            border:1px solid; /* 枠線をつける */
+            vertical-align: middle;
+            padding-left: 30px;
+            white-space: nowrap; //折り返さない
+        }
+    & > table > tr {
+        height: 77px;
+        }
+}
+
+
+//CSSでは、thとtdに対して枠線borderを設定し、
+//tableタグに対してborder-collapse:collapseを設定

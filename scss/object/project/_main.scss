@@ -1,0 +1,34 @@
+.p-main--404page {
+    margin: 200px;
+    & > h2 {
+        color: #006291;
+        font-size: 80px;
+    }
+    &__text {
+        margin: 20px;
+        font-size: 25px;
+        font-family: 'Roboto';
+        color: var(--card-bg);
+
+
+    }
+    &__url {
+        margin: 40px;
+        font-size: 40px;
+        font-family: 'Roboto';
+        color: var(--card-bg);
+    }
+    &__home {
+        margin: 20px;
+        font-size: 25px;
+        font-family: 'Roboto';
+        color: var(--card-bg);
+        & > a {
+            font-weight: bold;
+        }
+
+
+    }
+
+}
+

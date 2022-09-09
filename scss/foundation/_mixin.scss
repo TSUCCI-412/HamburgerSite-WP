@@ -1,0 +1,32 @@
+// @mixinの定義
+// 変数をmq()というmixinで呼び出す
+@mixin mq($breakpoint:tb) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq($breakpoint:pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-range($breakpoint: md) {
+  @media #{map-get($breakpoint-range, $breakpoint)} {
+    @content;
+  }
+}
+
+
+//@include mq() { // 引数を省略（初期値はtbの600px）
+
+//@include mq(pc) { // 引数を個別に指定
+
+//min//  cssが効く範囲の最小の値
+//max//  cssが効く範囲の最大の値
+//min and max //   一定の範囲内で通用する値
+  
+//フォントサイズについて//////////////////////////////////
+//remはあくまで可変となっても大丈夫な箇所にのみ指定するべき
+

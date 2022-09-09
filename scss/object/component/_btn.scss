@@ -1,0 +1,35 @@
+.c-btn {
+    display: block;
+    text-align: center;
+    font-family: "mplus+1m";
+    font-weight: bold;
+    color: var(--third-fontcolor);
+}
+.c-btn--sp {
+    font-family: 'Roboto';
+    font-size: rem(20);
+    cursor: pointer; 
+   @include mq(tb){
+    font-size: rem(34);
+      }
+    
+}
+
+.c-btn--search {
+    border-radius: 10px;
+    border: 1px solid #707070;
+    background-color: #F2EDE9;
+    min-width: 78px;
+}
+
+.c-btn--primary {
+    font-weight: bold;
+    height: 81px;
+    width: 100%;
+    max-width: 429px;
+    border-radius: 20px;
+    color: var(--primary-fontcolor);
+    border: 1px solid #707070;
+    background-color: #F2EDE9;
+    margin-bottom: 30px;
+}

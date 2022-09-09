@@ -1,0 +1,12 @@
+.c-list {
+    margin: 30px 0;
+    &__wrapper:first-of-type {
+        margin-bottom: 60px;
+    }
+    &__item {
+        margin: 20px 0;
+    }
+    &__middle {
+        margin-left: 18px;
+    }
+}

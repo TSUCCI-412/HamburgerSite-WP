@@ -1,0 +1,11 @@
+.c-samplecode {
+        background-color: #F5F5F5;
+        padding: 50px;
+
+    
+    & > pre > code {
+        display: block;
+        line-height: 1.4;
+    }
+    
+}

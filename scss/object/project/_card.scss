@@ -1,0 +1,87 @@
+.p-card {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    @include mq(tb) {
+        flex-direction: row;
+    }
+    @include mq(pc) {
+        margin-bottom: 30px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--card-bg);
+        order: 2;
+        color: var(--secondry-fontcolor);
+        padding: 30px 17px 43px;
+        @include mq(tb) {
+            width: 50%;
+            padding: 30px 35px 40px;
+        }
+        @include mq(pc) {
+            padding: 63px 53px 60px;
+        }
+        
+    }
+    &__head {
+        //white-space: nowrap;
+        font-size: rem(20);
+        font-weight: bold;
+        margin-bottom: 24px;
+        @include mq(tb) {
+            font-size: rem(21);
+        }
+        @include mq(pc) {
+            font-size: rem(23);
+            margin-bottom: 47px;
+        }
+    }
+    &__subhead {
+        font-size: rem(16);
+        font-weight: bold;
+        margin-bottom: 10px;
+        @include mq(tb) {
+            font-size: rem(18);
+        }
+        @include mq(pc) {
+            font-size: rem(18);
+            margin-bottom: 17px;
+        }
+    }
+    &__text {
+        font-size: rem(14);
+        margin-bottom: 40px;
+        @include mq(pc) {
+            margin-bottom: 60px;
+        }
+    }    
+    &__img {
+        width: 100%;
+        display: block; /* 余計な余白が出ないようにする */
+        order: 1;
+        @include mq(tb) {
+            width: 50%;
+        }
+    }
+    &__btn {
+        margin: auto;  //高さを下に揃えるため
+        border-radius: 30px;
+        padding: 10px 40px;
+        background-color:  #fff;
+        min-width: 163px;
+        font-size: rem(16);
+        font-weight: bold;
+        @include mq(pc) {
+            width: 60%;
+            padding-top: 27px;
+            padding-bottom: 27px;
+        }
+       
+    }
+}
+
+
+
+

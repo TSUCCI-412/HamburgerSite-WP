@@ -1,0 +1,43 @@
+.p-search-form {
+    display: flex;
+    justify-content: center;
+   
+    @include mq(pc) {
+        padding-right: 30px;
+    }
+}
+    
+
+.p-search-form__keyword {
+    border: 1px solid #707070;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 45px;
+    max-width: 230px;
+    margin-right: 12px;
+    @include mq(tb){
+        max-width: 396px;
+    }  
+    
+}
+
+.p-search-form__submit {
+    font-size: rem(16);
+    height: 45px;
+    width: 78px; 
+    line-height: 45px;
+    //検索をボックスの真ん中に配置
+    @include mq(tb){
+        max-width: 136px;
+    }  
+  
+
+}
+
+.p-search-form__keyword.fas {
+    font-size: rem(24);
+    color: #808080;
+    padding-left: 12px;
+
+}
+

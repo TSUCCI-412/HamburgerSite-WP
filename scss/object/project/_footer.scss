@@ -1,0 +1,41 @@
+.p-footer {
+    background-color: var(--footer-bg);
+    color: var(--secondry-fontcolor);
+    font-family: "M+1m";
+    text-align: center;
+    &__menu {
+        padding-top: 40px;
+        padding-bottom: 35px;
+        font-size: rem(20); 
+        display: flex;  
+        justify-content: center;
+    }
+    &__list {
+        &:first-child::after {
+            content: "";
+            margin: 15px;
+            border: solid 1px;
+        }
+    }
+    &__copyright {
+        display: block;
+        font-size: rem(14);
+        padding-bottom: 30x;
+    }
+    
+}
+
+//Word Press化した後のスタイリング変更
+.menu>ul {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    font-size: rem(20); 
+    justify-content: center;
+}
+.page-item-5::after {
+    content: "";
+    margin: 15px;
+    border: solid 1px;
+    background-color: #fff;
+}

@@ -1,0 +1,33 @@
+.p-gnav {
+    color: var(--third-fontcolor);
+    margin-top: 160px;
+    &__item > a {
+        display: block;
+        font-weight: bold; ;
+        padding: 35px 40px;  
+        font-size: rem(24);
+    }
+    &__subitem > a {
+        display: block;
+        color: var(--third-fontcolor);
+        padding: 11px 66px;
+        font-size: rem(20);
+        
+    }
+}
+
+//WordPress化のスタイリング変更
+.p-gnav__list>li>a {
+    display: block;
+        font-weight: bold; ;
+        padding: 35px 40px;  
+        font-size: rem(24);
+
+}
+.sub-menu>li>a {
+    display: block;
+        color: var(--third-fontcolor);
+        padding: 11px 66px;
+        font-size: rem(20);
+
+}
