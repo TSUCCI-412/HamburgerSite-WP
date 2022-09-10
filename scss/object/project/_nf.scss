@@ -1,0 +1,48 @@
+.p-nf--404page {
+    margin: 50px;
+    & > h2 {
+        color: #70ce72;
+        font-size: 25px;
+        @include mq(tb) {
+            font-size: 40px;
+        }
+        @include mq(pc) {
+        font-size: 60px;
+        }
+    }
+    &__text {
+        margin: 20px;
+        font-size: 16px;
+        font-family: 'Roboto';
+        color: var(--card-bg);
+        @include mq(tb) {
+        font-size: 20px;
+        }
+    }
+    &__url {
+        font-size: 14px;
+        font-family: 'Roboto';
+        color: var(--card-bg);
+        margin-left: 20px;
+        @include mq(tb) {
+            font-size: 20px;
+            }
+    }
+    &__home {
+        margin: 20px;
+        font-size: 16px;
+        font-family: 'Roboto';
+        color: var(--card-bg);
+        & > a {
+            font-weight: bold;
+        }
+        @include mq(tb) {
+            font-size: 20px;
+            }
+
+
+    }
+
+}
+
+//スマホサイズでもフッターを最下部にするためにクラス追加 p-footer--400

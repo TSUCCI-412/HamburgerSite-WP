@@ -39,3 +39,13 @@
     border: solid 1px;
     background-color: #fff;
 }
+
+
+//ページ404のコンテンツが少ない時にフッターを下に固定するcss
+.p-footer--404 {
+    position: absolute;
+    top:100vh;
+    @include mq(pc) {
+        position: static;
+    }
+}
