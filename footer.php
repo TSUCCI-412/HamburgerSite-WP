@@ -1,4 +1,4 @@
-<footer class="l-footer p-footer p-footer--404">
+<footer class="l-footer p-footer">
             <?php wp_nav_menu(
                 array (
                     'theme_location' => 'Footer Menu'

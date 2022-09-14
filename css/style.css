@@ -1541,13 +1541,13 @@ ul, li {
   background-color: #fff;
 }
 
-.p-footer--404 {
+.error404 > .c-layer > .c-container > .p-footer {
   position: absolute;
-  top: 100vh;
+  bottom: 0;
 }
 
 @media screen and (min-width: 1025px) {
-  .p-footer--404 {
+  .error404 > .c-layer > .c-container > .p-footer {
     position: static;
   }
 }
@@ -1727,7 +1727,7 @@ ul, li {
 }
 
 .p-pictures__item {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -1735,6 +1735,7 @@ ul, li {
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
+  column-gap: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -1938,32 +1939,38 @@ ul, li {
   }
 }
 
+.p-nf {
+  padding: 40px;
+}
+
 .p-nf--404page {
-  margin: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .p-nf--404page > h2 {
   color: #70ce72;
   font-size: 25px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 600px) {
   .p-nf--404page > h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .p-nf--404page > h2 {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
 .p-nf--404page__text {
-  margin: 20px;
   font-size: 16px;
   font-family: 'Roboto';
   color: var(--card-bg);
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -1976,7 +1983,7 @@ ul, li {
   font-size: 14px;
   font-family: 'Roboto';
   color: var(--card-bg);
-  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -1986,7 +1993,6 @@ ul, li {
 }
 
 .p-nf--404page__home {
-  margin: 20px;
   font-size: 16px;
   font-family: 'Roboto';
   color: var(--card-bg);

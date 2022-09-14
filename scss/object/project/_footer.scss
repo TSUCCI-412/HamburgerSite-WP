@@ -42,9 +42,11 @@
 
 
 //ページ404のコンテンツが少ない時にフッターを下に固定するcss
-.p-footer--404 {
+//ワードプレス化で付与されたbodyのクラス名を使ってスタイリング 
+
+.error404 >.c-layer >.c-container >.p-footer {
     position: absolute;
-    top:100vh;
+    bottom: 0;
     @include mq(pc) {
         position: static;
     }
