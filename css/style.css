@@ -1332,6 +1332,8 @@ ul, li {
   background-image: url(../img/cheeseburger.jpg);
   background-size: cover;
   object-position: center;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
@@ -1347,6 +1349,7 @@ ul, li {
   background-image: url(../img/shopphoto.jpg);
   background-size: cover;
   object-position: center;
+  background-position: top;
   display: flex;
   align-items: center;
 }

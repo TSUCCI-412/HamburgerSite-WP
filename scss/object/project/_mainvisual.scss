@@ -82,8 +82,10 @@
     height: 225px;
     width: auto;
     background-image: url(../img/cheeseburger.jpg);
-    background-size: cover;
+    background-size: cover;     //表示サイズを調整
     object-position: center;
+    background-position: center;   //表示位置を調整
+    background-repeat: no-repeat;  //繰り返し表示の制御
     display: flex;
     align-items: center;
     @include mq(tb) {
@@ -97,6 +99,7 @@
     background-image: url(../img/shopphoto.jpg);
     background-size: cover;
     object-position: center;
+    background-position: top;
     display: flex;
     align-items: center;
     @include mq(tb) {
@@ -107,6 +110,7 @@
 .p-mainvisual__title--single {
     font-size: rem(36);
     font-weight: bold;
+
     color: var(--secondry-fontcolor);
     margin-left: 26px;
     @include mq(tb) {
