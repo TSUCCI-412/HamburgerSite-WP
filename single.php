@@ -9,9 +9,9 @@
                     <?php if(have_posts()):
                         while(have_posts()):
                             the_post(); ?>
+                            <?php the_content(); ?> 
                             <?php remove_filter ('the_content', 'wpautop'); ?> <!--WPで自動生成されるbrタグやｐなどを制御-->
 
-                            <?php the_content(); ?> 
                             <?php wp_link_pages(); //記事内ページャー ?>
 
                     </section>
