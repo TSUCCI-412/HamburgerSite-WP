@@ -14,7 +14,6 @@
                             <?php the_content(); ?> 
                             <?php wp_link_pages(); //記事内ページャー ?>
 
-
                     </section>
                     <?php endwhile;
                     else: ?>
