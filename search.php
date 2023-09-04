@@ -53,57 +53,7 @@
                                 <img class="p-card__img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php get_the_title(); ?>">
                             </figure>
                         
-                            <!--<figure class="p-card">
-                                <figcaption class="p-card__body">
-                                    <h3 class="p-card__head">チーズバーガー</h3>
-                                    <h4 class="p-card__subhead">小見出しが入ります</h4>
-                                    <p class="p-card__text">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                    </p>
-                                    <a class="p-card__btn c-btn" href="">詳しく見る</a>
-                                </figcaption>
-                                <img class="p-card__img" src="../img/archive.jpg">
-                            </figure>
                             
-                            <figure class="p-card">
-                                <figcaption class="p-card__body">
-                                    <h3 class="p-card__head">チーズバーガー</h3>
-                                    <h4 class="p-card__subhead">小見出しが入ります</h4>
-                                    <p class="p-card__text">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                    </p>
-                                    <a class="p-card__btn c-btn" href="">詳しく見る</a>
-                                </figcaption>
-                                <img class="p-card__img" src="../img/archive.jpg">
-                            </figure>
-                            
-                            <figure class="p-card">
-                                <figcaption class="p-card__body">
-                                    <h3 class="p-card__head">チーズバーガー</h3>
-                                    <h4 class="p-card__subhead">小見出しが入ります</h4>
-                                    <p class="p-card__text">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                    </p>
-                                    <a class="p-card__btn c-btn" href="">詳しく見る</a>
-                                </figcaption>
-                                <img class="p-card__img" src="../img/archive.jpg">
-                            </figure>
-                            
-                            <figure class="p-card">
-                                <figcaption class="p-card__body">
-                                    <h3 class="p-card__head">チーズバーガー</h3>
-                                    <h4 class="p-card__subhead">小見出しが入ります</h4>
-                                    <p class="p-card__text">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                    </p>
-                                    <a class="p-card__btn c-btn" href="">詳しく見る</a>
-                                </figcaption>
-                                <img class="p-card__img" src="../img/archive.jpg">
-                            </figure>-->
                             <?php endwhile;
                     else: ?>
                     <p>入力画面に戻り、再度検索を指定して下さい</P>
